@@ -1,0 +1,19 @@
+{
+
+    "manifest_version": 2,
+    "name": "WhatsApp Web Dark Mode (Beta Feature) Enable",
+    "version": "1.0",
+
+    "description": "WhatsApp Web Dark mode is a Beta feature. This extension enables it by changing the \"body\" class from \"web\" to \"web dark\"",
+
+    "icons": {
+        "48": "icons/dark_whatsapp_icon_round_corner_48.png",
+        "96": "icons/dark_whatsapp_icon_round_corner_96.png"
+    },
+
+    "content_scripts": [{
+        "matches": ["*://web.whatsapp.com/*"],
+        "js": ["darken.js"]
+    }]
+
+}
